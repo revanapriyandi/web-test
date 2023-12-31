@@ -11,6 +11,7 @@
     "lint:strict": "eslint --max-warnings=0 src"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
     "@radix-ui/react-alert-dialog": "^1.0.5",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-dropdown-menu": "^2.0.6",

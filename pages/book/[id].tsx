@@ -34,7 +34,7 @@ export default function BookDetailPage() {
         </Link>
       </Button>
       <div className='mb-10'>
-        <Table>
+        <Table className='w-full'>
           <h1 className='text-xl font-bold mb-5'>Book Detail</h1>
           <TableBody>
             <TableRow>

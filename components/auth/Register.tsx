@@ -89,7 +89,9 @@ export default function Register() {
           </div>
         </CardContent>
         <CardFooter>
-          <Button onClick={onSubmit} >Register</Button>
+          <div className="flex justify-end mt-4">
+            <Button onClick={onSubmit} className='inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring'>Register</Button>
+          </div>
         </CardFooter>
       </Card>
     </TabsContent>

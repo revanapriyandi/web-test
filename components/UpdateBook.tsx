@@ -80,22 +80,22 @@ export default function UpdateBook({ book }: UpdateBookProps) {
         <DialogHeader>
           <DialogTitle>Update Book</DialogTitle>
           <DialogDescription>
-            Update the book data with the correct information.</DialogDescription>
+            Update the book data with the correct information.
+          </DialogDescription>
         </DialogHeader>
-        <div className='grid gap-4 py-4'>
-          <div className='grid grid-cols-4 items-center gap-4'>
-            <Label htmlFor='isbn' className='text-right'>
+        <div className='space-y-2'>
+          <div className='space-y-1'>
+            <Label htmlFor='isbn'>
               ISBN
             </Label>
             <Input
               id='isbn'
-              className='col-span-3'
               value={isbn}
               onChange={(e) => setIsbn(e.target.value)}
             />
           </div>
-          <div className='grid grid-cols-4 items-center gap-4'>
-            <Label htmlFor='title' className='text-right'>
+          <div className='space-y-1'>
+            <Label htmlFor='title'>
               Title
             </Label>
             <Input
@@ -105,8 +105,8 @@ export default function UpdateBook({ book }: UpdateBookProps) {
               onChange={(e) => setTitle(e.target.value)}
             />
           </div>
-          <div className='grid grid-cols-4 items-center gap-4'>
-            <Label htmlFor='subtitle' className='text-right'>
+          <div className='space-y-1 '>
+            <Label htmlFor='subtitle'>
               Subtitle
             </Label>
             <Input
@@ -116,8 +116,8 @@ export default function UpdateBook({ book }: UpdateBookProps) {
               onChange={(e) => setSubtitle(e.target.value)}
             />
           </div>
-          <div className='grid grid-cols-4 items-center gap-4'>
-            <Label htmlFor='author' className='text-right'>
+          <div className='space-y-1'>
+            <Label htmlFor='author'>
               Author
             </Label>
             <Input
@@ -127,8 +127,8 @@ export default function UpdateBook({ book }: UpdateBookProps) {
               onChange={(e) => setAuthor(e.target.value)}
             />
           </div>
-          <div className='grid grid-cols-4 items-center gap-4'>
-            <Label htmlFor='publisher' className='text-right'>
+          <div className='space-y-1'>
+            <Label htmlFor='publisher'>
               Publisher
             </Label>
             <Input
@@ -138,8 +138,8 @@ export default function UpdateBook({ book }: UpdateBookProps) {
               onChange={(e) => setPublisher(e.target.value)}
             />
           </div>
-          <div className='grid grid-cols-4 items-center gap-4'>
-            <Label htmlFor='pages' className='text-right'>
+          <div className='space-y-1'>
+            <Label htmlFor='pages'>
               Pages
             </Label>
             <Input
@@ -149,8 +149,8 @@ export default function UpdateBook({ book }: UpdateBookProps) {
               onChange={(e) => setPages(Number(e.target.value))}
             />
           </div>
-          <div className='grid grid-cols-4 items-center gap-4'>
-            <Label htmlFor='description' className='text-right'>
+          <div className='space-y-1'>
+            <Label htmlFor='description'>
               Description
             </Label>
             <Input
@@ -160,8 +160,8 @@ export default function UpdateBook({ book }: UpdateBookProps) {
               onChange={(e) => setDescription(e.target.value)}
             />
           </div>
-          <div className='grid grid-cols-4 items-center gap-4'>
-            <Label htmlFor='website' className='text-right'>
+          <div className='space-y-1'>
+            <Label htmlFor='website'>
               Website
             </Label>
             <Input
@@ -173,7 +173,7 @@ export default function UpdateBook({ book }: UpdateBookProps) {
           </div>
         </div>
         <DialogFooter>
-          <Button type='submit' onClick={onSubmit}>
+          <Button type='submit' onClick={onSubmit} className='inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring'>
             Update
           </Button>
         </DialogFooter>

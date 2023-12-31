@@ -69,10 +69,10 @@ export default function Books() {
     <main className='layout mb-20'>
       <AddBook />
       <h1 className='text-xl font-bold mb-4'>Catalog Books</h1>
-      <Table>
-        <TableHeader>
-          <TableRow>
-            <TableHead className='w-[100px]'>ID</TableHead>
+      <Table className='tremor-Table-table w-full tabular-nums text-tremor-default text-tremor-content dark:text-dark-tremor-content'>
+        <TableHeader className='tremor-TableHead-root text-left text-tremor-content dark:text-dark-tremor-content'>
+          <TableRow className='tremor-TableRow-row'>
+            <TableHead className='w-[100px] '>ID</TableHead>
             <TableHead>User ID</TableHead>
             <TableHead>ISBN</TableHead>
             <TableHead>Title</TableHead>

@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
+  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -16,6 +17,7 @@ import { Label } from '@/components/ui/label';
 import { TabsContent } from '@/components/ui/tabs';
 
 import { handleLogin } from '@/services/auth';
+import { Car } from 'lucide-react';
 
 export default function Login() {
   const router = useRouter();
@@ -46,6 +48,9 @@ export default function Login() {
       <Card>
         <CardHeader>
           <CardTitle>Login</CardTitle>
+          <CardDescription>
+            Login to your account
+          </CardDescription>
         </CardHeader>
         <CardContent className='space-y-2'>
           <div className='space-y-1'>
@@ -68,8 +73,11 @@ export default function Login() {
           </div>
         </CardContent>
         <CardFooter>
-          <Button onClick={onSubmit} className='block'>Login</Button>
+          <div className="flex justify-end">
+            <Button onClick={onSubmit} className='w-full inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring'>Login</Button>
+          </div>
         </CardFooter>
+
       </Card>
     </TabsContent >
   );
