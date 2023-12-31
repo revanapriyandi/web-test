@@ -50,31 +50,11 @@ export default function Header() {
           <DropdownMenuTrigger asChild>
             <Button variant='outline'>
               <UserRound className='h-[1.2rem] w-[1.2rem] mr-2' />
-              <span>{`${nameUser} | ${emailUser}`}</span>
+              <span>{`${nameUser}`}</span>
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align='end'>
             <DropdownMenuItem onClick={onLogout}>Logout</DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant='outline' size='icon'>
-              <Sun className='h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0' />
-              <Moon className='absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100' />
-              <span className='sr-only'>Toggle theme</span>
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align='end'>
-            <DropdownMenuItem onClick={() => setTheme('light')}>
-              Light
-            </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => setTheme('dark')}>
-              Dark
-            </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => setTheme('system')}>
-              System
-            </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </nav>

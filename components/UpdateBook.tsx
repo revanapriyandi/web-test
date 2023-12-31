@@ -76,15 +76,15 @@ export default function UpdateBook({ book }: UpdateBookProps) {
           <PenSquare className='h-[1.2rem] w-[1.2rem] text-green-500' />
         </Button>
       </DialogTrigger>
-      <DialogContent className='sm:max-w-[425px]'>
+      <DialogContent className='sm:max-w-[640px]'>
         <DialogHeader>
           <DialogTitle>Update Book</DialogTitle>
           <DialogDescription>
             Update the book data with the correct information.
           </DialogDescription>
         </DialogHeader>
-        <div className='space-y-2'>
-          <div className='space-y-1'>
+        <div className='grid gap-4 py-4'>
+          <div className='grid grid-cols-4 items-center gap-4'>
             <Label htmlFor='isbn'>
               ISBN
             </Label>
@@ -94,7 +94,7 @@ export default function UpdateBook({ book }: UpdateBookProps) {
               onChange={(e) => setIsbn(e.target.value)}
             />
           </div>
-          <div className='space-y-1'>
+          <div className='grid grid-cols-4 items-center gap-4'>
             <Label htmlFor='title'>
               Title
             </Label>
@@ -105,7 +105,7 @@ export default function UpdateBook({ book }: UpdateBookProps) {
               onChange={(e) => setTitle(e.target.value)}
             />
           </div>
-          <div className='space-y-1 '>
+          <div className='grid grid-cols-4 items-center gap-4 '>
             <Label htmlFor='subtitle'>
               Subtitle
             </Label>
@@ -116,7 +116,7 @@ export default function UpdateBook({ book }: UpdateBookProps) {
               onChange={(e) => setSubtitle(e.target.value)}
             />
           </div>
-          <div className='space-y-1'>
+          <div className='grid grid-cols-4 items-center gap-4'>
             <Label htmlFor='author'>
               Author
             </Label>
@@ -127,7 +127,7 @@ export default function UpdateBook({ book }: UpdateBookProps) {
               onChange={(e) => setAuthor(e.target.value)}
             />
           </div>
-          <div className='space-y-1'>
+          <div className='grid grid-cols-4 items-center gap-4'>
             <Label htmlFor='publisher'>
               Publisher
             </Label>
@@ -138,7 +138,7 @@ export default function UpdateBook({ book }: UpdateBookProps) {
               onChange={(e) => setPublisher(e.target.value)}
             />
           </div>
-          <div className='space-y-1'>
+          <div className='grid grid-cols-4 items-center gap-4'>
             <Label htmlFor='pages'>
               Pages
             </Label>
@@ -149,7 +149,7 @@ export default function UpdateBook({ book }: UpdateBookProps) {
               onChange={(e) => setPages(Number(e.target.value))}
             />
           </div>
-          <div className='space-y-1'>
+          <div className='grid grid-cols-4 items-center gap-4'>
             <Label htmlFor='description'>
               Description
             </Label>
@@ -160,7 +160,7 @@ export default function UpdateBook({ book }: UpdateBookProps) {
               onChange={(e) => setDescription(e.target.value)}
             />
           </div>
-          <div className='space-y-1'>
+          <div className='grid grid-cols-4 items-center gap-4'>
             <Label htmlFor='website'>
               Website
             </Label>

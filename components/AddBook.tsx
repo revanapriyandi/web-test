@@ -65,9 +65,9 @@ export default function AddBook() {
   return (
     <Dialog>
       <DialogTrigger className='my-4' asChild>
-        <Button>Add Book</Button>
+        <Button className='w-full inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring'>Add Book</Button>
       </DialogTrigger>
-      <DialogContent className='sm:max-w-[425px]'>
+      <DialogContent className='sm:max-w-[640px]'>
         <DialogHeader>
           <DialogTitle>Add Book</DialogTitle>
           <DialogDescription>
@@ -166,7 +166,7 @@ export default function AddBook() {
           </div>
         </div>
         <DialogFooter>
-          <Button type='submit' onClick={onSubmit}>
+          <Button type='submit' onClick={onSubmit} className='w-full inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring'>
             Save changes
           </Button>
         </DialogFooter>
